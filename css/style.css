@@ -1,4 +1,86 @@
-/* ! html/css test response */
-body{
-    background-color: blue;
+/* * Generics */
+p{
+    font-size: 12px;
+}
+
+/* ^ HEADER */
+#cs-header{
+    min-height: 60px;
+    border: 2px dotted;
+    background-color: rgb(44, 62, 80);
+}
+
+/* ^ MAIN */
+/* * Jumbotron cs rules */
+#cs-jumbotron{
+    min-height: 300px;
+    border: 2px dotted;
+    background-color: rgb(26, 188, 156);
+    padding-top: 20px;
+}
+
+.cs-col{
+    min-height: 50px;
+    background-color: white;
+    border: 1px dotted;
+}
+
+.col-img{
+    height:150px;
+}
+
+/* * Portfolio cs rules */
+#portfolio{
+    margin-top: 30px;
+}
+
+.portfolio-title{
+    min-height: 50px;
+}
+
+.cs-col-xl{
+    min-height: 200px;
+    border: 1px dotted;
+}
+
+.bg-red{
+    background-color: rgb(186, 75, 99);
+}
+
+.bg-sky-blu{
+    background-color: rgb(30, 164, 182);
+}
+
+.bg-black{
+    background-color: rgb(20, 15, 15);
+}
+
+.bg-blu{
+    background-color: rgb(14, 56, 181);
+}
+
+.bg-pink{
+    background-color: rgb(204, 178, 163);
+}
+/* * About Us cs rules */
+#aboutus{
+    min-height: 300px;
+    background-color: rgb(26, 188, 156);
+    padding: 20px 0;
+    margin-top: 30px;
+    
+}
+
+.cs-col-md{
+    min-height: 150px;
+    background-color: transparent;
+    border: 1px dotted;
+}
+
+
+#cs-footer{
+    min-height: 80px;
+    border: 2px dotted;
+    background-color: rgb(44, 62, 80);
+    margin-top: 30px;
 }
