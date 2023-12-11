@@ -7,7 +7,9 @@ h4{
     font-weight: 700;
 }
 
-
+a{
+    text-decoration: none;
+}
 
 /*^ UTILITIES */
 .bg-aqua-green{
@@ -76,6 +78,11 @@ background-color: rgb(26, 188, 156);
 /* ^PORTFOLIO */
 #portfolio img{
     max-width: 300px;
+}
+
+/* ^ABOUT */
+#about a{
+    color: white;
 }
 
 /* ^CONTACT - FORM */
