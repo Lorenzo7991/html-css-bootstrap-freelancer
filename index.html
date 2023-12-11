@@ -8,6 +8,11 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
 
+    <!-- *FontAwsome import link -->
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css'
+        integrity='sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=='
+        crossorigin='anonymous'>
+
     <!-- * Local stylesheet import link -->
     <link rel="stylesheet" href="css/style.css">
 
@@ -17,74 +22,180 @@
 </head>
 
 <body>
-    <!-- * Header section -->
-    <header id="cs-header" class="container-fluid text-white d-flex align-items-center justify-content-center">
-        <!-- * Header title -->
-        <h1>Header</h1>
-    </header>
-    <!-- * Main section -->
-    <main>
-        <!-- * Main - Jumbotron-section -->
-        <section id="cs-jumbotron" class="container-fluid">
-            <!-- * Jumbotron - Jumbo contents -->
+    <!-- *Start header section -->
+    <header>
+        <!-- *Start imported bootstrap navbar -->
+        <nav class="navbar navbar-expand-lg bg-cs-blu fw-bold px-0" data-bs-theme="dark">
+            <!-- *Start navbar contents container -->
             <div class="container">
-                <!-- * Jumbo row -->
-                <div class="row row-cols-1 justify-content-center">
-                    <!-- * Jumbo row - cols -->
-                    <div class="cs-col col-img col-6 col-md-4 col-xl-2  "></div>
-                    <div class="cs-col col"></div>
-                    <div class="cs-col col"></div>
+                <!-- *Navbar title -->
+                <a class="navbar-brand text-white" href="#">START BOOTSTRAP</a>
+                <!-- *Navbar sm burger list -->
+                <button class="navbar-toggler border-white " type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span><i class="fa-solid fa-bars text-white"></i></span>
+                </button>
+                <div class="collapse navbar-collapse flex-grow-0" id="navbarSupportedContent">
+                    <!-- *Start navbar list items -->
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link text-white" aria-current="page" href="#">PORTFOLIO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#">ABOUT</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#">CONTACT</a>
+                        </li>
+                        <!-- *End navbar list items -->
+                    </ul>
+                </div>
+                <!-- *End navbar contents container -->
+            </div>
+            <!-- *End imported bootstrap navbar -->
+        </nav>
+        <!-- *End header section -->
+    </header>
+
+
+    <!-- *Start main section -->
+    <main>
+        <!-- *Start jumbotron section & contents container -->
+        <section id="jumbotron" class="container-fluid bg-aqua-green text-white text-center py-4 ">
+            <!-- *Jumbotron avatar img -->
+            <img src="assets/avatar.svg" alt="avatar img">
+            <h1>START BOOTSTRAP</h1>
+            <!-- *Start "divider" utility -->
+            <div class="divider d-flex justify-content-center align-items-center my-3 fs-2">
+                <span class="line bg-white rounded-1"></span>
+                <i class="fa-solid fa-star mx-2"></i>
+                <span class="line bg-white rounded-1"></span>
+                <!-- *End "divider" utilty -->
+            </div>
+            <!-- *End jumbotron section -->
+        </section>
+
+
+        <!-- *Start portfolio section -->
+        <section id="portfolio" class="my-5">
+            <!-- *Portfolio contents container -->
+            <div class="container text-center cs-text-color">
+                <h4>PORTFOLIO</h4>
+                <!-- *Start "divider" utilty -->
+                <div class="divider d-flex justify-content-center align-items-center my-3 fs-2">
+                    <span class="line bg-cs-blu rounded-1"></span>
+                    <i class="fa-solid fa-star mx-2"></i>
+                    <span class="line bg-cs-blu rounded-1"></span>
+                    <!-- *End "divider" utility -->
+                </div>
+                <!-- *Start portfolio row -->
+                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-2">
+                    <div class="col text-center">
+                        <img class="rounded-2" src="assets/cabin.png" alt="cabin-img">
+                    </div>
+                    <div class="col text-center">
+                        <img class="rounded-2" src="assets/cake.png" alt="cabin-img">
+                    </div>
+                    <div class="col text-center">
+                        <img class="rounded-2" src="assets/circus.png" alt="cabin-img">
+                    </div>
+                    <div class="col text-center">
+                        <img class="rounded-2" src="assets/game.png" alt="cabin-img">
+                    </div>
+                    <div class="col text-center">
+                        <img class="rounded-2" src="assets/safe.png" alt="cabin-img">
+                    </div>
+                    <div class="col text-center">
+                        <img class="rounded-2" src="assets/submarine.png" alt="cabin-img">
+                    </div>
+                </div>
+                <!-- *End porfolio row -->
+            </div>
+            <!-- *End portfolio section -->
+        </section>
+
+
+        <!-- *Start about section & contents container -->
+        <section id="about" class="container-fluid bg-aqua-green text-white text-center py-4">
+            <h4>ABOUT</h4>
+            <!-- *Start "divider" utility -->
+            <div class="divider d-flex justify-content-center align-items-center my-3 fs-2">
+                <span class="line bg-white rounded-1"></span>
+                <i class="fa-solid fa-star mx-2"></i>
+                <span class="line bg-white rounded-1"></span>
+                <!-- *End "divider" utilty -->
+            </div>
+            <!-- *Start about row  -->
+            <div class="row row-cols-1 row-cols-md-2 text-white text-start justify-content-center">
+                <div class="col-10 col-md-5">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam, optio maxime minima,
+                        repellendus vel necessitatibus, quos ad vitae eaque repudiandae sed eligendi animi corrupti
+                        error? Unde ab libero modi fugit?
+                        Dolores aut id eius explicabo quam suscipit quas consequuntur nulla.</p>
+                </div>
+                <div class="col-10 col-md-5">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae aut voluptatem iste debitis nihil
+                        itaque quasi numquam, voluptas quae quas. Reiciendis tempore delectus, minus optio aliquid omnis
+                        rem nulla totam!
+                        Sequi fugiat est id? Dolores aut magnam vitae aliquid amet temporibus.</p>
+                </div>
+            </div>
+            <!-- *Download about btn -->
+            <a href="#"><button type="button" class="btn btn-outline-light mt-5"><i class="fa-solid fa-download"></i> Donwload</button></a>
+            <!-- *End about section -->
+        </section>
+
+
+        <!-- *Start contact us section & contents container -->
+        <section id="contact" class="container  cs-text-color my-5">
+            <h4 class="text-center">CONTACT ME</h4>
+             <!-- *Start "divider" utilty -->
+             <div class="divider d-flex justify-content-center align-items-center my-3 fs-2">
+                <span class="line bg-cs-blu rounded-1"></span>
+                <i class="fa-solid fa-star mx-2"></i>
+                <span class="line bg-cs-blu rounded-1"></span>
+                <!-- *End "divider" utility -->
+            </div>
+            <div class="row justify-content-center">
+                <div class="col col-10">
+                    <!-- *Start imported bootstrap form -->
+                    <form>
+                        <div class="mb-2">
+                            <input type="name" class="form-control" id="name"
+                                placeholder="Name">
+                        </div>
+                        <div class="mb-2">
+                            <input type="email" class="form-control" id="email"
+                                placeholder="Email Address">
+                        </div>
+                        <div class="mb-2">
+                            <input type="tel" class="form-control" id="phone"
+                                placeholder="Phone Number">
+                        </div>
+                        <div class="mb-2">
+                            <textarea class="form-control" id="textarea" rows="3" placeholder="Message"></textarea>
+                        </div>
+                        <!-- *End imported bootstrap form -->
+                        <button type="button" class="btn btn-success bg-aqua-green border-0 my-2">Send</button>
+                    </form>
                 </div>
             </div>
         </section>
-        <!-- * Section portfolio -->
-        <section id="portfolio" class="container">
-            <!-- * Portfolio title container -->
-            <div class="portfolio-title text-center">
-                <h1 class="fs-5">PORTFOLIO</h1>
-            </div>
-            <!-- * Portfolio row -->
-            <div class="row g-3 row-cols-1 row-cols-sm-2 row-cols-md-3 justify-content-center ">
-                <!-- * Portfolio row - cols -->
-                <div class="cs-col-xl bg-red col "></div>
-                <div class="cs-col-xl bg-sky-blu col"></div>
-                <div class="cs-col-xl bg-black col"></div>
-                <div class="cs-col-xl bg-sky-blu col"></div>
-                <div class="cs-col-xl bg-blu col"></div>
-                <div class="cs-col-xl bg-pink  col"></div>
-            </div>
-        </section>
-        <!-- * About Us Section -->
-        <section id="aboutus" class="container-fluid text-center text-white">
-            <!-- * About Us title -->
-            <h1 class="fs-5">ABOUT</h1>
-            <!-- * About us row -->
-            <div class="row justify-content-center align-items-center">
-                <!-- * About Us row - cols -->
-                <div class="cs-col-md col-12 col-sm-6 col-xl-3">
-                </div>
-                <div class="cs-col-md col-12 col-sm-6 col-xl-3">
-                    <!-- <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis illo dolorum magnam fugiat sed debitis praesentium quam dicta suscipit accusantium sapiente molestias quisquam quo eveniet optio, veniam eum ipsa labore.Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis illo dolorum magnam fugiat sed debitis praesentium quam dicta suscipit accusantium sapiente molestias quisquam quo eveniet optio, veniam eum ipsa labore.</p> -->
-                </div>
-            </div>
-        </section>
-        <!-- * Contact me section -->
-        <section id="contactme" class="container text-center">
-            <!-- * Contact me title -->
-            <h1 class="fs-5">CONTACT ME</h1>
-            <!-- * Contact me row -->
-            <div class="row justify-content-center align-items-center ">
-                <!-- *Contact me row - cols -->
-                <div class="cs-col-md col">
-                </div>
-            </div>
-        </section>
+        <!-- *End main section -->
     </main>
-    <!-- * Fotter section -->
-    <footer id="cs-footer" class="container-fluid text-white d-flex align-items-center justify-content-center">
-        <!-- * Footer title -->
-        <h1>Footer</h1>
+
+
+    <!-- *Start footer section -->
+    <footer class="container-fluid bg-cs-blu text-center text-white my-0">
+        <p class="mb-0 pt-4">Lorem ipsum <i class="fa-regular fa-copyright"></i> dolor sit amet</p>
     </footer>
+
+
+
+
+
+
 </body>
 
 </html>
